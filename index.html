@@ -1,0 +1,89 @@
+<doctype !html>
+<html>
+ <body>
+   <label>Entity:</label>
+   <select id="entity">
+    <option value="slime">slime</option>
+    <option value="zombie">zombie</option>
+    <option value="creeper">creeper</option>
+    <option value="skeleton">skeleton</option>
+    <option value="blaze">blaze</option>
+    <option value="ghast">ghast</option>
+    <option value="magma_cube">magma_cube</option>
+    <option value="nethereye">nethereye</option>
+    <option value="cow">cow</option>
+    <option value="mooshroom">mooshroom</option>
+    <option value="pig">pig</option>
+    <option value="squid">squid</option>
+    <option value="sheep">sheep</option>
+    <option value="bat">bat</option>
+    <option value="chicken">chicken</option>
+    <option value="rabbit">rabbit</option>
+    <option value="cactus_cow">cactus_cow</option>
+    <option value="snow_golem">snow_golem</option>
+    <option value="wolf">wolf</option>
+    <option value="spider">spider</option>
+    <option value="zombie_pigman">zombie_pigman</option>
+    <option value="enderman">enderman</option>
+    <option value="spawnskin">spawnskin</option>
+   </select>
+   <br>
+   <label>Quantity:</label>
+   <input id="quantity" type="number" value="1" min="1" max="20">
+   <br>
+   <label>Position X:</label>
+   <input id="positionX" type="number">
+   <br>
+   <label>Position Y:</label>
+   <input id="positionY" type="number">
+   <br>
+   <label>Name:</label>
+   <input id="dataTagName">
+   <br>
+   <label>Health:</label>
+   <input id="dataTagHealth" type="number">
+   <br>
+   <label>Default Drops:</label>
+   <input id="dataTagDefaultDrops" type="checkbox" checked="true">
+   <br>
+   <label>Skin Id:</label>
+   <input id="dataTagSkin" type="number">
+   <br>
+   <label>Charged:</label>
+   <input id="dataTagCharged" type="checkbox">
+   <br>
+   <label>Aggro:</label>
+   <select id="dataTagAggro">
+    <option value="hostile">hostile</option>
+    <option value="neutral">neutral</option>
+    <option value="passive">passive</option>
+   </select>
+   <br>
+   <label>Baby:</label>
+   <input id="dataTagBaby" type="checkbox">
+   <br>
+   <label>Color:</label>
+   <select id="dataTagColor">
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="blue">blue</option>
+    <option value="brown">brown</option>
+    <option value="cyan">cyan</option>
+    <option value="lightblue">lightblue</option>
+    <option value="lightgreen">lightgreen</option>
+    <option value="magenta">magenta</option>
+    <option value="orange">orange</option>
+    <option value="pink">pink</option>
+    <option value="purple">purple</option>
+    <option value="white">white</option>
+    <option value="yellow">yellow</option>
+    <option value="lightgray">lightgray</option>
+    <option value="gray">gray</option>
+    <option value="black">black</option>
+   </select>
+   <br>
+   <input type="submit" value="Generate Command" onclick="generateCommand();">
+   <p id="command">/summon mob_type [quantity] [[~]x [[~]y [data_tags]</p>
+  <script src="script.js"></script>
+ </body>
+</html>
